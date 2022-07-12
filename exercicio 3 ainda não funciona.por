@@ -29,6 +29,7 @@ das médias finais e das porcentagens de frequência.
 					//soma = soma + alunos[linhas][colunas]
 					soma++
 					vet[linhas] = soma //=vet[linhas] +alunos[linhas][colunas]
+					
 				}
 				
 				senao se(linhas == 1)
@@ -36,17 +37,26 @@ das médias finais e das porcentagens de frequência.
 					escreva("Digite as médias finais \n")
 					leia(alunos[linhas][colunas])
 					limpa()
+					soma = soma + alunos[linhas][colunas]
+					se(colunas == 10)
+					{
+						//vet[linhas] =vet[linhas] +alunos[linhas][colunas]
+						vet[linhas] = linhas / colunas
+					}
 					
-					vet[linhas] =vet[linhas] +alunos[linhas][colunas]
-
 				}
 				senao se(linhas == 2)
 				{
+					
 					escreva("Digite a porcetagem de frequência dos alunos \n")
 					leia(alunos[linhas][colunas])
 					limpa()
-					vet[linhas] =vet[linhas] + alunos[linhas][colunas]
-
+					soma = soma + alunos[linhas][colunas]
+					se(colunas ==10)
+					{
+						//vet[linhas] =vet[linhas] + alunos[linhas][colunas]
+						vet[linhas] = soma / colunas
+					}
 				}
 								 	
 				
