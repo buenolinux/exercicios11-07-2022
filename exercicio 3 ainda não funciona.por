@@ -29,6 +29,10 @@ das médias finais e das porcentagens de frequência.
 					//soma = soma + alunos[linhas][colunas]
 					soma++
 					vet[linhas] = soma //=vet[linhas] +alunos[linhas][colunas]
+					se(colunas>9)
+					{
+						soma =0
+					}
 					
 				}
 				
@@ -38,10 +42,10 @@ das médias finais e das porcentagens de frequência.
 					leia(alunos[linhas][colunas])
 					limpa()
 					soma = soma + alunos[linhas][colunas]
-					se(colunas == 10)
+					se(colunas == 9)
 					{
 						//vet[linhas] =vet[linhas] +alunos[linhas][colunas]
-						vet[linhas] = linhas / colunas
+						vet[linhas] = soma / colunas
 					}
 					
 				}
